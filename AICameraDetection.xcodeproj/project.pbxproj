@@ -1,0 +1,897 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DF282F3EBF410254B74B8A1 /* Pods_AICameraDetectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1677C75FF15F9FF0F9A5895 /* Pods_AICameraDetectionTests.framework */; };
+		8F9BDF1125D14AF700FA117E /* BrightnessDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BDF1025D14AF600FA117E /* BrightnessDetection.swift */; };
+		8F9BDF1225D14AF700FA117E /* BrightnessDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9BDF1025D14AF600FA117E /* BrightnessDetection.swift */; };
+		8F9D642425D43BAA0015CE94 /* FaceMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D642325D43BAA0015CE94 /* FaceMaskView.swift */; };
+		8FA2233B25CE9C0D0073918A /* AICameraSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA2233A25CE9C0D0073918A /* AICameraSessionTests.swift */; };
+		8FA2233D25CE9C0D0073918A /* AICameraDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4992625C55C3C008D0646 /* AICameraDetection.framework */; platformFilter = ios; };
+		8FA2234725CE9DDD0073918A /* AISessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4996B25C564F2008D0646 /* AISessionManager.swift */; };
+		8FA2234A25CE9DE00073918A /* AICameraAccessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4996225C56426008D0646 /* AICameraAccessError.swift */; };
+		8FA2234D25CE9DE30073918A /* AICameraDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4995D25C561E1008D0646 /* AICameraDetectionManager.swift */; };
+		8FA2235025CE9DE70073918A /* AIDetectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499A825C6257E008D0646 /* AIDetectionType.swift */; };
+		8FA2235325CE9DE90073918A /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499B425C62979008D0646 /* Detection.swift */; };
+		8FA2235625CE9DEC0073918A /* FaceDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4997D25C61B04008D0646 /* FaceDetectionManager.swift */; };
+		8FA2235925CE9DF00073918A /* AIDocumentDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499BF25C62B23008D0646 /* AIDocumentDetection.swift */; };
+		8FA2236625CE9F490073918A /* AITypealies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE245E425C8A12100168A14 /* AITypealies.swift */; };
+		8FB4993725C55C3C008D0646 /* AICameraDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB4992925C55C3C008D0646 /* AICameraDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FB4994925C55D60008D0646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4994825C55D60008D0646 /* AppDelegate.swift */; };
+		8FB4994B25C55D60008D0646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4994A25C55D60008D0646 /* SceneDelegate.swift */; };
+		8FB4994D25C55D60008D0646 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4994C25C55D60008D0646 /* ViewController.swift */; };
+		8FB4995025C55D60008D0646 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4994E25C55D60008D0646 /* Main.storyboard */; };
+		8FB4995225C55D61008D0646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4995125C55D61008D0646 /* Assets.xcassets */; };
+		8FB4995525C55D61008D0646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4995325C55D61008D0646 /* LaunchScreen.storyboard */; };
+		8FB4995E25C561E1008D0646 /* AICameraDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4995D25C561E1008D0646 /* AICameraDetectionManager.swift */; };
+		8FB4996325C56426008D0646 /* AICameraAccessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4996225C56426008D0646 /* AICameraAccessError.swift */; };
+		8FB4996C25C564F2008D0646 /* AISessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4996B25C564F2008D0646 /* AISessionManager.swift */; };
+		8FB4997E25C61B04008D0646 /* FaceDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4997D25C61B04008D0646 /* FaceDetectionManager.swift */; };
+		8FB499A125C620CE008D0646 /* AICameraDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4992625C55C3C008D0646 /* AICameraDetection.framework */; };
+		8FB499A225C620CE008D0646 /* AICameraDetection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB4992625C55C3C008D0646 /* AICameraDetection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FB499A925C6257E008D0646 /* AIDetectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499A825C6257E008D0646 /* AIDetectionType.swift */; };
+		8FB499B525C62979008D0646 /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499B425C62979008D0646 /* Detection.swift */; };
+		8FB499C025C62B23008D0646 /* AIDocumentDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB499BF25C62B23008D0646 /* AIDocumentDetection.swift */; };
+		8FE245E525C8A12100168A14 /* AITypealies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE245E425C8A12100168A14 /* AITypealies.swift */; };
+		A78BBC5C063D0EEBEDE48D2E /* Pods_AICameraDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445AF61089FE9BA636B53CE7 /* Pods_AICameraDetection.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FA2233E25CE9C0D0073918A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB4991D25C55C3C008D0646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB4992525C55C3C008D0646;
+			remoteInfo = AICameraDetection;
+		};
+		8FB499A325C620CE008D0646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB4991D25C55C3C008D0646 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB4992525C55C3C008D0646;
+			remoteInfo = AICameraDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB499A525C620CF008D0646 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FB499A225C620CE008D0646 /* AICameraDetection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24F7395A3CEA100513B528FB /* Pods-AICameraDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICameraDetection.release.xcconfig"; path = "Target Support Files/Pods-AICameraDetection/Pods-AICameraDetection.release.xcconfig"; sourceTree = "<group>"; };
+		445AF61089FE9BA636B53CE7 /* Pods_AICameraDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AICameraDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		522E0C23B720F63CCFA15FD9 /* Pods-AICameraDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICameraDetection.debug.xcconfig"; path = "Target Support Files/Pods-AICameraDetection/Pods-AICameraDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		5FCFB02D07FA0546F06FA6A5 /* Pods-AICameraDetectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICameraDetectionTests.debug.xcconfig"; path = "Target Support Files/Pods-AICameraDetectionTests/Pods-AICameraDetectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65A32366E23B5A119039BD84 /* Pods-AICameraDetectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICameraDetectionTests.release.xcconfig"; path = "Target Support Files/Pods-AICameraDetectionTests/Pods-AICameraDetectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F9BDF1025D14AF600FA117E /* BrightnessDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessDetection.swift; sourceTree = "<group>"; };
+		8F9D642325D43BAA0015CE94 /* FaceMaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMaskView.swift; sourceTree = "<group>"; };
+		8FA2233825CE9C0D0073918A /* AICameraDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AICameraDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA2233A25CE9C0D0073918A /* AICameraSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICameraSessionTests.swift; sourceTree = "<group>"; };
+		8FA2233C25CE9C0D0073918A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB4992625C55C3C008D0646 /* AICameraDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AICameraDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB4992925C55C3C008D0646 /* AICameraDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AICameraDetection.h; sourceTree = "<group>"; };
+		8FB4992A25C55C3C008D0646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB4994625C55D60008D0646 /* AICameraDetectionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AICameraDetectionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB4994825C55D60008D0646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FB4994A25C55D60008D0646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8FB4994C25C55D60008D0646 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FB4994F25C55D60008D0646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FB4995125C55D61008D0646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB4995425C55D61008D0646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB4995625C55D61008D0646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB4995D25C561E1008D0646 /* AICameraDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICameraDetectionManager.swift; sourceTree = "<group>"; };
+		8FB4996225C56426008D0646 /* AICameraAccessError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICameraAccessError.swift; sourceTree = "<group>"; };
+		8FB4996B25C564F2008D0646 /* AISessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISessionManager.swift; sourceTree = "<group>"; };
+		8FB4997D25C61B04008D0646 /* FaceDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionManager.swift; sourceTree = "<group>"; };
+		8FB499A825C6257E008D0646 /* AIDetectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDetectionType.swift; sourceTree = "<group>"; };
+		8FB499B425C62979008D0646 /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		8FB499BF25C62B23008D0646 /* AIDocumentDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDocumentDetection.swift; sourceTree = "<group>"; };
+		8FE245E425C8A12100168A14 /* AITypealies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITypealies.swift; sourceTree = "<group>"; };
+		F1677C75FF15F9FF0F9A5895 /* Pods_AICameraDetectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AICameraDetectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FA2233525CE9C0D0073918A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA2233D25CE9C0D0073918A /* AICameraDetection.framework in Frameworks */,
+				7DF282F3EBF410254B74B8A1 /* Pods_AICameraDetectionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4992325C55C3C008D0646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78BBC5C063D0EEBEDE48D2E /* Pods_AICameraDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4994325C55D60008D0646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB499A125C620CE008D0646 /* AICameraDetection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F9BDF0F25D1437900FA117E /* DefaultView */ = {
+			isa = PBXGroup;
+			children = (
+				8F9D642325D43BAA0015CE94 /* FaceMaskView.swift */,
+			);
+			path = DefaultView;
+			sourceTree = "<group>";
+		};
+		8FA2233925CE9C0D0073918A /* AICameraDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA2233A25CE9C0D0073918A /* AICameraSessionTests.swift */,
+				8FA2233C25CE9C0D0073918A /* Info.plist */,
+			);
+			path = AICameraDetectionTests;
+			sourceTree = "<group>";
+		};
+		8FB4991C25C55C3C008D0646 = {
+			isa = PBXGroup;
+			children = (
+				8FB4992825C55C3C008D0646 /* AICameraDetection */,
+				8FB4994725C55D60008D0646 /* AICameraDetectionExample */,
+				8FA2233925CE9C0D0073918A /* AICameraDetectionTests */,
+				8FB4992725C55C3C008D0646 /* Products */,
+				8FB499A025C620CE008D0646 /* Frameworks */,
+				A8E3AF6F219681027A3AA585 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB4992725C55C3C008D0646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4992625C55C3C008D0646 /* AICameraDetection.framework */,
+				8FB4994625C55D60008D0646 /* AICameraDetectionExample.app */,
+				8FA2233825CE9C0D0073918A /* AICameraDetectionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB4992825C55C3C008D0646 /* AICameraDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8F9BDF0F25D1437900FA117E /* DefaultView */,
+				8FB4995D25C561E1008D0646 /* AICameraDetectionManager.swift */,
+				8FB4996A25C564D6008D0646 /* CameraSetup */,
+				8FB499BC25C62AC2008D0646 /* Detection */,
+				8FE245E325C8A0FB00168A14 /* Support */,
+				8FB4992925C55C3C008D0646 /* AICameraDetection.h */,
+				8FB4992A25C55C3C008D0646 /* Info.plist */,
+			);
+			path = AICameraDetection;
+			sourceTree = "<group>";
+		};
+		8FB4994725C55D60008D0646 /* AICameraDetectionExample */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4994825C55D60008D0646 /* AppDelegate.swift */,
+				8FB4994A25C55D60008D0646 /* SceneDelegate.swift */,
+				8FB4994C25C55D60008D0646 /* ViewController.swift */,
+				8FB4994E25C55D60008D0646 /* Main.storyboard */,
+				8FB4995125C55D61008D0646 /* Assets.xcassets */,
+				8FB4995325C55D61008D0646 /* LaunchScreen.storyboard */,
+				8FB4995625C55D61008D0646 /* Info.plist */,
+			);
+			path = AICameraDetectionExample;
+			sourceTree = "<group>";
+		};
+		8FB4996A25C564D6008D0646 /* CameraSetup */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4996B25C564F2008D0646 /* AISessionManager.swift */,
+				8FB4996225C56426008D0646 /* AICameraAccessError.swift */,
+			);
+			path = CameraSetup;
+			sourceTree = "<group>";
+		};
+		8FB4997C25C61AE0008D0646 /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4997D25C61B04008D0646 /* FaceDetectionManager.swift */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		8FB499A025C620CE008D0646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				445AF61089FE9BA636B53CE7 /* Pods_AICameraDetection.framework */,
+				F1677C75FF15F9FF0F9A5895 /* Pods_AICameraDetectionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FB499B225C6290D008D0646 /* DocumentDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8FB499BF25C62B23008D0646 /* AIDocumentDetection.swift */,
+			);
+			path = DocumentDetection;
+			sourceTree = "<group>";
+		};
+		8FB499BC25C62AC2008D0646 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				8FB499A825C6257E008D0646 /* AIDetectionType.swift */,
+				8FB499B425C62979008D0646 /* Detection.swift */,
+				8FB4997C25C61AE0008D0646 /* FaceDetection */,
+				8FB499B225C6290D008D0646 /* DocumentDetection */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		8FE245E325C8A0FB00168A14 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8FE245E425C8A12100168A14 /* AITypealies.swift */,
+				8F9BDF1025D14AF600FA117E /* BrightnessDetection.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A8E3AF6F219681027A3AA585 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				522E0C23B720F63CCFA15FD9 /* Pods-AICameraDetection.debug.xcconfig */,
+				24F7395A3CEA100513B528FB /* Pods-AICameraDetection.release.xcconfig */,
+				5FCFB02D07FA0546F06FA6A5 /* Pods-AICameraDetectionTests.debug.xcconfig */,
+				65A32366E23B5A119039BD84 /* Pods-AICameraDetectionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8FB4992125C55C3C008D0646 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB4993725C55C3C008D0646 /* AICameraDetection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8FA2233725CE9C0D0073918A /* AICameraDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FA2234025CE9C0D0073918A /* Build configuration list for PBXNativeTarget "AICameraDetectionTests" */;
+			buildPhases = (
+				F9F5B718055A7EDBB7E2BB08 /* [CP] Check Pods Manifest.lock */,
+				8FA2233425CE9C0D0073918A /* Sources */,
+				8FA2233525CE9C0D0073918A /* Frameworks */,
+				8FA2233625CE9C0D0073918A /* Resources */,
+				8FA2236E25CEB4140073918A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FA2233F25CE9C0D0073918A /* PBXTargetDependency */,
+			);
+			name = AICameraDetectionTests;
+			productName = AICameraDetectionTests;
+			productReference = 8FA2233825CE9C0D0073918A /* AICameraDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FB4992525C55C3C008D0646 /* AICameraDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB4993A25C55C3C008D0646 /* Build configuration list for PBXNativeTarget "AICameraDetection" */;
+			buildPhases = (
+				1C7DB281B05FD592188CEF84 /* [CP] Check Pods Manifest.lock */,
+				8FB4992125C55C3C008D0646 /* Headers */,
+				8FB4992225C55C3C008D0646 /* Sources */,
+				8FB4992325C55C3C008D0646 /* Frameworks */,
+				8FB4992425C55C3C008D0646 /* Resources */,
+				8FA2237125CFEB680073918A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AICameraDetection;
+			productName = AICameraDetection;
+			productReference = 8FB4992625C55C3C008D0646 /* AICameraDetection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FB4994525C55D60008D0646 /* AICameraDetectionExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB4995725C55D61008D0646 /* Build configuration list for PBXNativeTarget "AICameraDetectionExample" */;
+			buildPhases = (
+				8FB4994225C55D60008D0646 /* Sources */,
+				8FB4994325C55D60008D0646 /* Frameworks */,
+				8FB4994425C55D60008D0646 /* Resources */,
+				8FB499A525C620CF008D0646 /* Embed Frameworks */,
+				8FA2237225CFEB7F0073918A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB499A425C620CE008D0646 /* PBXTargetDependency */,
+			);
+			name = AICameraDetectionExample;
+			productName = AICameraDetectionExample;
+			productReference = 8FB4994625C55D60008D0646 /* AICameraDetectionExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FB4991D25C55C3C008D0646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8FA2233725CE9C0D0073918A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					8FB4992525C55C3C008D0646 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+					};
+					8FB4994525C55D60008D0646 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 8FB4992025C55C3C008D0646 /* Build configuration list for PBXProject "AICameraDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FB4991C25C55C3C008D0646;
+			productRefGroup = 8FB4992725C55C3C008D0646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB4992525C55C3C008D0646 /* AICameraDetection */,
+				8FB4994525C55D60008D0646 /* AICameraDetectionExample */,
+				8FA2233725CE9C0D0073918A /* AICameraDetectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FA2233625CE9C0D0073918A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4992425C55C3C008D0646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4994425C55D60008D0646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB4995525C55D61008D0646 /* LaunchScreen.storyboard in Resources */,
+				8FB4995225C55D61008D0646 /* Assets.xcassets in Resources */,
+				8FB4995025C55D60008D0646 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C7DB281B05FD592188CEF84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AICameraDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA2236E25CEB4140073918A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+		8FA2237125CFEB680073918A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+		8FA2237225CFEB7F0073918A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		F9F5B718055A7EDBB7E2BB08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AICameraDetectionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA2233425CE9C0D0073918A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA2234725CE9DDD0073918A /* AISessionManager.swift in Sources */,
+				8FA2235325CE9DE90073918A /* Detection.swift in Sources */,
+				8FA2235025CE9DE70073918A /* AIDetectionType.swift in Sources */,
+				8FA2236625CE9F490073918A /* AITypealies.swift in Sources */,
+				8F9BDF1225D14AF700FA117E /* BrightnessDetection.swift in Sources */,
+				8FA2234A25CE9DE00073918A /* AICameraAccessError.swift in Sources */,
+				8FA2235925CE9DF00073918A /* AIDocumentDetection.swift in Sources */,
+				8FA2235625CE9DEC0073918A /* FaceDetectionManager.swift in Sources */,
+				8FA2234D25CE9DE30073918A /* AICameraDetectionManager.swift in Sources */,
+				8FA2233B25CE9C0D0073918A /* AICameraSessionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4992225C55C3C008D0646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB4995E25C561E1008D0646 /* AICameraDetectionManager.swift in Sources */,
+				8F9BDF1125D14AF700FA117E /* BrightnessDetection.swift in Sources */,
+				8FB499B525C62979008D0646 /* Detection.swift in Sources */,
+				8FB4996325C56426008D0646 /* AICameraAccessError.swift in Sources */,
+				8FB499A925C6257E008D0646 /* AIDetectionType.swift in Sources */,
+				8FB499C025C62B23008D0646 /* AIDocumentDetection.swift in Sources */,
+				8FB4997E25C61B04008D0646 /* FaceDetectionManager.swift in Sources */,
+				8F9D642425D43BAA0015CE94 /* FaceMaskView.swift in Sources */,
+				8FE245E525C8A12100168A14 /* AITypealies.swift in Sources */,
+				8FB4996C25C564F2008D0646 /* AISessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB4994225C55D60008D0646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB4994D25C55D60008D0646 /* ViewController.swift in Sources */,
+				8FB4994925C55D60008D0646 /* AppDelegate.swift in Sources */,
+				8FB4994B25C55D60008D0646 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FA2233F25CE9C0D0073918A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 8FB4992525C55C3C008D0646 /* AICameraDetection */;
+			targetProxy = 8FA2233E25CE9C0D0073918A /* PBXContainerItemProxy */;
+		};
+		8FB499A425C620CE008D0646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB4992525C55C3C008D0646 /* AICameraDetection */;
+			targetProxy = 8FB499A325C620CE008D0646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FB4994E25C55D60008D0646 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB4994F25C55D60008D0646 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB4995325C55D61008D0646 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB4995425C55D61008D0646 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FA2234125CE9C0D0073918A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FCFB02D07FA0546F06FA6A5 /* Pods-AICameraDetectionTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS4Z3MJ49V;
+				INFOPLIST_FILE = AICameraDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FA2234225CE9C0D0073918A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65A32366E23B5A119039BD84 /* Pods-AICameraDetectionTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS4Z3MJ49V;
+				INFOPLIST_FILE = AICameraDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FB4993825C55C3C008D0646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8FB4993925C55C3C008D0646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FB4993B25C55C3C008D0646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 522E0C23B720F63CCFA15FD9 /* Pods-AICameraDetection.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AICameraDetection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB4993C25C55C3C008D0646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F7395A3CEA100513B528FB /* Pods-AICameraDetection.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AICameraDetection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FB4995825C55D61008D0646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS4Z3MJ49V;
+				INFOPLIST_FILE = AICameraDetectionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetectionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB4995925C55D61008D0646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QS4Z3MJ49V;
+				INFOPLIST_FILE = AICameraDetectionExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azizbek.AICameraDetectionExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FA2234025CE9C0D0073918A /* Build configuration list for PBXNativeTarget "AICameraDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FA2234125CE9C0D0073918A /* Debug */,
+				8FA2234225CE9C0D0073918A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB4992025C55C3C008D0646 /* Build configuration list for PBXProject "AICameraDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB4993825C55C3C008D0646 /* Debug */,
+				8FB4993925C55C3C008D0646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB4993A25C55C3C008D0646 /* Build configuration list for PBXNativeTarget "AICameraDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB4993B25C55C3C008D0646 /* Debug */,
+				8FB4993C25C55C3C008D0646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB4995725C55D61008D0646 /* Build configuration list for PBXNativeTarget "AICameraDetectionExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB4995825C55D61008D0646 /* Debug */,
+				8FB4995925C55D61008D0646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FB4991D25C55C3C008D0646 /* Project object */;
+}

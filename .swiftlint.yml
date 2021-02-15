@@ -1,0 +1,30 @@
+disabled_rules:
+- colon
+- comma
+- control_statement
+- function_body_length
+- trailing_whitespace
+- identifier_name
+- empty_count
+- switch_case_alignment
+- unused_optional_binding
+line_length: 200
+opt_in_rules:
+- empty_count
+- missing_docs
+- nesting
+- weak_delegate
+- force_cast
+- force_try
+excluded:
+- Carthage
+- Pods
+- AppDelegate.swift
+reporter: xcode
+warning_threshold: 50
+
+included:
+- AICameraDetection
+- AICameraDetectionExample
+- AICameraDetectionTests
+

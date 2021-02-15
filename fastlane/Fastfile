@@ -1,0 +1,23 @@
+
+  desc "hello"
+  lane :hello do
+    # add actions here: https://docs.fastlane.tools/actions
+    puts 'Hello World!'
+  end
+
+
+lane :build_for_testing do
+  scan(
+    clean: true,
+    # derived_data_path: "DerivedData",
+    # build_for_testing: true,
+    # destination: 'platform=iOS Simulator,name=iPhone 8'
+ )
+  end
+  lane :tests do
+    run_tests(scheme: "AICameraDetection",
+    derived_data_path: "DerivedData",
+    destination: 'platform=iOS Simulator,name=iPhone 8'
+    )
+  end
+
