@@ -30,10 +30,12 @@ public class AISessionManager: NSObject {
     let cameraView: UIView
     let sessionQueue = DispatchQueue(label: "session queue")
     let videoDataOutput = AVCaptureVideoDataOutput()
+    weak var capturePhotoDelegate: AVCapturePhotoCaptureDelegate?
 
-    init(cameraView: UIView) {
+    init(cameraView: UIView, capturePhotoDelegate: AVCapturePhotoCaptureDelegate? = nil ) {
         self.cameraView = cameraView
         cameraPosition = .front
+        self.capturePhotoDelegate = capturePhotoDelegate
     }
 
     func openCamera(callback: @escaping CameraAccessErrorHandler) {
@@ -125,6 +127,18 @@ public class AISessionManager: NSObject {
     public func openSettings() {
         // open the app permission in Settings app
         UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+    }
+    
+    @objc
+    func handleTakePhoto() {
+        let photoSettings = AVCapturePhotoSettings()
+        if let photoPreviewType = photoSettings.availablePreviewPhotoPixelFormatTypes.first {
+            photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoPreviewType]
+            guard let delegate = capturePhotoDelegate else {
+                return
+            }
+            photoOutput.capturePhoto(with: photoSettings, delegate: delegate)
+        }
     }
 }
 
