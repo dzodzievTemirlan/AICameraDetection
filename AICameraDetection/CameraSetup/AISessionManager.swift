@@ -30,7 +30,7 @@ public class AISessionManager: NSObject {
     let cameraView: UIView
     let sessionQueue = DispatchQueue(label: "session queue")
     let videoDataOutput = AVCaptureVideoDataOutput()
-    let capturePhotoDelegate: AVCapturePhotoCaptureDelegate?
+    weak var capturePhotoDelegate: AVCapturePhotoCaptureDelegate?
 
     init(cameraView: UIView, capturePhotoDelegate: AVCapturePhotoCaptureDelegate? = nil ) {
         self.cameraView = cameraView

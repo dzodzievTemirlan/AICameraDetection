@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import AVFoundation
 
 class AICameraSessionTests: XCTestCase {
 
@@ -18,9 +19,9 @@ class AICameraSessionTests: XCTestCase {
 
     func testSession_start_detectionType_is_face() {
         let session = AISessionManager(cameraView: UIView())
-        let type = AIDetectionType.face
+        let cameraPosition: AVCaptureDevice.Position = .front
 
-        XCTAssertEqual(type, session.detectionType)
+        XCTAssertEqual(cameraPosition, session.cameraPosition)
     }
 
 }
